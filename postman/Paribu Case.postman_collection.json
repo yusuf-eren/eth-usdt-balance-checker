@@ -1,0 +1,39 @@
+{
+	"info": {
+		"_postman_id": "6b83c1b1-9763-4be4-a848-83b0318a3c30",
+		"name": "Paribu Case",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14451459"
+	},
+	"item": [
+		{
+			"name": "Get Balances",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    \"0x71C7656EC7ab88b098defB751B7401B5f6d8976F\",\r\n    \"0xb794f5ea0ba39494ce839613fffba74279579268\",\r\n    \"123\",\r\n    {},\r\n    1,\r\n    [],\r\n    \"23q4523\",\r\n    \"0xfeC4A115911A120FdEd09a025b32D51e965E1214\"\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/crypto/ethereum/get-balances",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"crypto",
+						"ethereum",
+						"get-balances"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
