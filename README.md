@@ -59,5 +59,5 @@ docker run -p 3000:3000 yusuferen/paribuhub-case
 Or use docker-compose;
 
 ```shell
-docker-compose up
+docker-compose up --build
 ```
