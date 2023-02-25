@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: paribuhub-case
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: paribuhub-case
+  template:
+    metadata:
+      labels:
+        app: paribuhub-case
+    spec:
+      containers:
+        - name: paribuhub-case
+          image: yusuferen/paribuhub-case
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: paribuhub-case-srv
+spec:
+  selector:
+    app: paribuhub-case
+  ports:
+    - name: paribuhub-case
+      protocol: TCP
+      port: 3000
+      targetPort: 3000
