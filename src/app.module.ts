@@ -1,8 +1,8 @@
 import { Module } from '@nestjs/common';
-import { EthereumModule } from './ethereum/ethereum.module';
+import { CryptoModule } from './crypto/crypto.module';
 import { HelpersModule } from './helpers/helpers.module';
 
 @Module({
-  imports: [EthereumModule, HelpersModule],
+  imports: [CryptoModule, HelpersModule],
 })
 export class AppModule {}
